@@ -53,7 +53,10 @@
 <p>The CNN consists of three convolutional layers, with output dimensions of 128, 256, and 528, respectively, each followed by a ReLU activation function and a max pool to down-sample the feature maps. The output of the third convolutional layer is flattened to prepare it for two fully connected layers, with the first one applying a ReLU activation function and dropout regularization to prevent overfitting. The final output, representing class predictions, is obtained from the second fully connected layer. The FCN architecture is much simpler, consisting of three linear layers, with ReLU activations after the first and second layers. The first layer has an output dimension of 1000 and the second has 500, with the third layer having two output dimensions - one for each possible sentiment classification.</p>
 <p>Both the FCN and CNN were trained over five epochs with an ADAM optimizer, using cross-entropy loss as the optimization function. The networks classified the tweets based on predicted sentiment, and the aggregate accuracy and F1 scores were calculated, to compare with the results of Chen's investigation.</p>
 
-
+<div>
+<img src="cnn.png" alt="cnn" class="inline"/>
+</div>
+ 
 <h2>Results</h2>
 
 <h2>Conclusions</h2>
